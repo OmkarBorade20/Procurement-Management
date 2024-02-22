@@ -1,0 +1,47 @@
+[
+   
+    {
+        "description":"/login :to login users using credentials.",
+        "url":"/login",
+        "method":"POST",
+        "payload":{
+            "data":{
+                "email":"omkar.borade@gmail.com",
+                "password":"Omkar123"
+            }
+        }
+    },{
+        "description":"/admin/fetchMapping :to Fetch users Mapping.",
+        "url":"/admin/fetchMapping",
+        "method":"GET"
+    },
+    {
+        "description":"/admin/fetchProcumentManagers :to Fetch all Procurement Managers.",
+        "url":"/admin/fetchProcumentManagers",
+        "method":"GET"
+    },
+    {
+        "description":"/admin/fetchInspectionManagers :to Fetch all Inspection Managers.",
+        "url":"/admin/fetchInspectionManagers",
+        "method":"GET"
+    },
+    {
+        "description":"/admin/allUsers :to Fetch all Users.",
+        "url":"/admin/allUsers",
+        "method":"GET"
+    },
+    {
+        "description":"/order/viewOrders :to Fetch all orders.",
+        "url":"/order/viewOrders",
+        "method":"GET"
+       
+    },
+    {
+        "description":"/checklist/viewChecklist :to Fetch all checklists.",
+        "url":"/checklist/viewChecklist",
+        "method":"GET"
+       
+    }
+
+    
+]

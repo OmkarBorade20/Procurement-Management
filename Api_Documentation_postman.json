@@ -1,0 +1,759 @@
+{
+	"info": {
+		"_postman_id": "92f1e692-0bd3-4ed2-a7a0-430ea6e08420",
+		"name": "Procurement Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32874207"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "/admin/setAuthority",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVlY2Q4MjA1NzQzYjZiNWE4YTU1OCIsIm5hbWUiOiJpc2hhIEFnYXJ3YWwiLCJnZW5kZXIiOiJGZW1hbGUiLCJlbWFpbCI6ImlzaGEuYWdhcndhbEBnbWFpbC5jb20iLCJtb2JpbGVObyI6IjEyMzQ1Njc4OSIsInVzZXJUeXBlIjoiUHJvY3VyZW1lbnRNYW5hZ2VyIiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4OTgyMjMsImV4cCI6MTcwNzkwOTAyM30.FIRvi6dXy11IkKvxJpiWTRFxG1TYiPe0GjYmVRTf37E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"assign\":false,\n    \"pm\":\"omkar.borade@gmail.com\",\n    \"im\":\"raju.rastogi@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/setAuthority",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"setAuthority"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/fetchProcumentManagers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4OTk5NTAsImV4cCI6MTcwNzkxMDc1MH0.T925X6wJ7jZ6GkEbNtno7-kFAx4cOcYZwZqUPiCPti8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/admin/fetchProcumentManagers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"fetchProcumentManagers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/fetchMapping",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVlY2Q4MjA1NzQzYjZiNWE4YTU1OCIsIm5hbWUiOiJpc2hhIEFnYXJ3YWwiLCJnZW5kZXIiOiJGZW1hbGUiLCJlbWFpbCI6ImlzaGEuYWdhcndhbEBnbWFpbC5jb20iLCJtb2JpbGVObyI6IjEyMzQ1Njc4OSIsInVzZXJUeXBlIjoiUHJvY3VyZW1lbnRNYW5hZ2VyIiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4OTgyMjMsImV4cCI6MTcwNzkwOTAyM30.FIRvi6dXy11IkKvxJpiWTRFxG1TYiPe0GjYmVRTf37E",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/admin/fetchMapping",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"fetchMapping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/fetchInspectionManagers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4Mjk4OTksImV4cCI6MTcwNzg0MDY5OX0.eVLfrnsU2DqL7AHJg4RUAM2eqJI__ripjtVFcwReH6o",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/admin/fetchInspectionManagers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"fetchInspectionManagers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/fetchMapping/omkar.borade@gmail.com",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc3MjI1NjcsImV4cCI6MTcwNzcyNjE2N30.Gu6M3Jkom0T41PTEsFAA2x1cHPUDtDgVhp4R9oyKcqg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/fetchMapping/omkar.borade@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"fetchMapping",
+								"omkar.borade@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/fetchMapping",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc3NDE3MTYsImV4cCI6MTcwNzc1MjUxNn0.aBT46PFqx0S7Z4aXipGHd6jlMr9WSAxl1InEJ5yt7_s",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/admin/fetchMapping",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"fetchMapping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/admin/allUsers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc3MTcwODIsImV4cCI6MTcwNzcyMDY4Mn0.O-R6nG59PLa3H1RK3G2VJ-anFZkfQ9qeSd0a0v7B23o",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/admin/allUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"allUsers"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "All Apis Realted to Admin Activities."
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc3NDE3MTYsImV4cCI6MTcwNzc1MjUxNn0.aBT46PFqx0S7Z4aXipGHd6jlMr9WSAxl1InEJ5yt7_s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"omkar.borade@gmail.com\",\n    \"password\":\"Omkar123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4OTc1MzYsImV4cCI6MTcwNzkwODMzNn0.E0MYAd7ndrSoGEJqyHJPenr_kZbst6S23OabiIP-jHE",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"sam colson\",\n    \"gender\":\"Male\",\n    \"email\":\"sam.colson@gmail.com\",\n    \"password\":\"sam123\",\n    \"mobileNo\":\"8446920098\",\n    \"userType\":\"Client\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/refreshToken",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9ta2FyLmJvcmFkZUBnbWFpbC5jb20iLCJpYXQiOjE3MDc0NTU1NDgsImV4cCI6MTczOTAxMzE0OH0.kBNCYwn7v1W-tm2teHvqZNrfSRNtVZyrluLR-Vurywo",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/refreshToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"refreshToken"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "All Routes related to authentication."
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "/client/fetchDetails",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVjNGIyNTc3MjFjNzJjNjY1NmY0ZSIsIm5hbWUiOiJNdWtlc2ggQW1iYW5pIiwiZ2VuZGVyIjoiTWFsZSIsImVtYWlsIjoibXVrZXNoLmFtYmFuaUBSZWxpYW5jZS5jb20iLCJtb2JpbGVObyI6IjEyMzQ1Njc4OSIsInVzZXJUeXBlIjoiQ2xpZW50IiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc3MzgxMjIsImV4cCI6MTcwNzc0MTcyMn0.9lPG7rqHmcygo04tY7Dy0hUBjob6hm4ct5x4WbWyet8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/client/fetchDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"client",
+								"fetchDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/client/manageDetails",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1Y2M3NmRmMGM1NmQ5ZjI5ZjkwN2I5YyIsIm5hbWUiOiJzYW0gY29sc29uIiwiZ2VuZGVyIjoiTWFsZSIsImVtYWlsIjoic2FtLmNvbHNvbkBnbWFpbC5jb20iLCJtb2JpbGVObyI6Ijg0NDY5MjAwOTgiLCJ1c2VyVHlwZSI6IkNsaWVudCIsInJlZ2lzdGVyZWRCeSI6Ik9ta2FyIEJvcmFkZSIsInJlZ2lzdGVyZWRQZXJzb25Sb2xlIjoiQWRtaW4ifSwiaWF0IjoxNzA3ODk4NjA5LCJleHAiOjE3MDc5MDk0MDl9.Nm342TfKPKmoiar24qf1XLuaLHuWOV5Ea5KDUtzfOng",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"type\": \"update\",\n    \"client-name\": \"Nike\",\n    \"client-cotactNo\": 8446920098,\n    \"client-address\": \"Dubai\",\n    \"product\": \"Fashinable Shoes\",\n    \"description\": \"Transport Shoes accross countries.\",\n    \"shipping-address\": \"NewYork.\",\n    \"instructions\": \"Kindly do the shipment within 24 hours.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/client/manageDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"client",
+								"manageDetails"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Apis Realted to Clients."
+		},
+		{
+			"name": "checklist",
+			"item": [
+				{
+					"name": "/checklist/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4ODgxODEsImV4cCI6MTcwNzg5ODk4MX0._xxNp4hgFjgE7Z8dostVprlL3YTtq1sueQR3uCI81zo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"client-name\":\"Reliance\",\n    \"Question-1\":\"Make all Security Check ?\",\n    \"Question-2\":\"Check if all goods are not Damaged ?\",\n    \"Question-3\":\"Upload Image Before Transportation\",\n    \"Question-4\":\"is Pickup Before Time ?\",\n    \"Question-5\":\"follow all compliance rules ?\",\n    \"inspection-manager\":\"sonam.bajwa@gmail.com\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/checklist/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"checklist",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/checklist/update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVlZDIyMjA1NzQzYjZiNWE4YTU1OSIsIm5hbWUiOiJyaXRlc2ggQWdhcndhbCIsImdlbmRlciI6Ik1hbGUiLCJlbWFpbCI6InJpdGVzaC5hZ2Fyd2FsQGdtYWlsLmNvbSIsIm1vYmlsZU5vIjoiMTIzNDU2Nzg5IiwidXNlclR5cGUiOiJJbnNwZWN0aW9uTWFuYWdlciIsInJlZ2lzdGVyZWRCeSI6Ik9ta2FyIEJvcmFkZSIsInJlZ2lzdGVyZWRQZXJzb25Sb2xlIjoiQWRtaW4ifSwiaWF0IjoxNzA3ODUxNTc3LCJleHAiOjE3MDc4NjIzNzd9.5BDlfYha0l8JrqhPTAnm8MfhyZxhwBfK4L849vj4KtI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"checklist-id\":8546,\n    \"Answere-1\":\"yes\",\n    \"Answere-2\":\"yes\",\n    \"Answere-3\":\"No\",\n    \"Answere-4\":\"yes\",\n    \"Answere-5\":\"yes\",\n    \"Answere-client\":\"done\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/checklist/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"checklist",
+								"update"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/checklist/approve",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVlY2Q4MjA1NzQzYjZiNWE4YTU1OCIsIm5hbWUiOiJpc2hhIEFnYXJ3YWwiLCJnZW5kZXIiOiJGZW1hbGUiLCJlbWFpbCI6ImlzaGEuYWdhcndhbEBnbWFpbC5jb20iLCJtb2JpbGVObyI6IjEyMzQ1Njc4OSIsInVzZXJUeXBlIjoiUHJvY3VyZW1lbnRNYW5hZ2VyIiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4NTE2MTYsImV4cCI6MTcwNzg2MjQxNn0.8UTbW7jUb-mwysDXhF5GA4QmJwzAMWikfGbBsAqISko",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"checklist-id\":2240,\n    \"Remark\":\"Can Follow On for Transit.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/checklist/approve",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"checklist",
+								"approve"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/checklist/sentback",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVlY2Q4MjA1NzQzYjZiNWE4YTU1OCIsIm5hbWUiOiJpc2hhIEFnYXJ3YWwiLCJnZW5kZXIiOiJGZW1hbGUiLCJlbWFpbCI6ImlzaGEuYWdhcndhbEBnbWFpbC5jb20iLCJtb2JpbGVObyI6IjEyMzQ1Njc4OSIsInVzZXJUeXBlIjoiUHJvY3VyZW1lbnRNYW5hZ2VyIiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4NTI1OTMsImV4cCI6MTcwNzg2MzM5M30.mtHDuiuS0GZ5EekrhmA68E0sL0FZk2EQ9cPjKAdchmQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"checklist-id\":2240,\n    \"Remark\":\"please Fill Proper Details.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/checklist/sendback",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"checklist",
+								"sendback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/checklist/link",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVlY2Q4MjA1NzQzYjZiNWE4YTU1OCIsIm5hbWUiOiJpc2hhIEFnYXJ3YWwiLCJnZW5kZXIiOiJGZW1hbGUiLCJlbWFpbCI6ImlzaGEuYWdhcndhbEBnbWFpbC5jb20iLCJtb2JpbGVObyI6IjEyMzQ1Njc4OSIsInVzZXJUeXBlIjoiUHJvY3VyZW1lbnRNYW5hZ2VyIiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4MzI5MDAsImV4cCI6MTcwNzg0MzcwMH0.oSqjsqYuFDQAdhor-0J8xOZxCvQtJQVo8ZwVSC6OgpA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order-id\":5938,\n    \"checklist-id\":4442,//9687,//1672\n    \"procurement-manager-comment\":\"link the Tcs Order\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/checklist//link",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"checklist",
+								"",
+								"link"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/checklist/viewChecklist",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzliYjk4MGJkZThhNWVlNWZmNjVkYiIsIm5hbWUiOiJkaXNoYSBwYXRuaSIsImdlbmRlciI6IkZlTWFsZSIsImVtYWlsIjoiZGlzaGEucGF0bmlAZ21haWwuY29tIiwibW9iaWxlTm8iOiIxMjM0NTY3ODkiLCJ1c2VyVHlwZSI6Ikluc3BlY3Rpb25NYW5hZ2VyIiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4MzczNDIsImV4cCI6MTcwNzg0ODE0Mn0.f8-knyactW3hno0Y8Nrybb7rUpQmsUKGJew9Ccra-2A",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/checklist/viewChecklist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"checklist",
+								"viewChecklist"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc3NDE3MTYsImV4cCI6MTcwNzc1MjUxNn0.aBT46PFqx0S7Z4aXipGHd6jlMr9WSAxl1InEJ5yt7_s",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/checklist/uploadDocs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "uploadedFile",
+									"type": "file",
+									"src": "/home/user/Pictures/Screenshots/Screenshot from 2024-02-08 15-10-30.png"
+								},
+								{
+									"key": "checklist-id",
+									"value": "6602",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/checklist/uploadDocs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"checklist",
+								"uploadDocs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/checklist/downloadDocs/File6040",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVlY2Q4MjA1NzQzYjZiNWE4YTU1OCIsIm5hbWUiOiJpc2hhIEFnYXJ3YWwiLCJnZW5kZXIiOiJGZW1hbGUiLCJlbWFpbCI6ImlzaGEuYWdhcndhbEBnbWFpbC5jb20iLCJtb2JpbGVObyI6IjEyMzQ1Njc4OSIsInVzZXJUeXBlIjoiUHJvY3VyZW1lbnRNYW5hZ2VyIiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4ODYxMDEsImV4cCI6MTcwNzg5NjkwMX0.UnOY-h8X4Hr_Yj4EbcFB4bhTCflGPbp5w9Q1emqRKe0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/checklist/downloadDocs/File6040",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"checklist",
+								"downloadDocs",
+								"File6040"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "all apis realted to checklists."
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "/order/create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzRkMTE5YWU4YWQwODZkMTMyNjM0YSIsIm5hbWUiOiJPbWthciBCb3JhZGUiLCJnZW5kZXIiOiJNYWxlIiwiZW1haWwiOiJvbWthci5ib3JhZGVAZ21haWwuY29tIiwibW9iaWxlTm8iOiI4NDQ2OTIwMDk4IiwidXNlclR5cGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4ODgxODEsImV4cCI6MTcwNzg5ODk4MX0._xxNp4hgFjgE7Z8dostVprlL3YTtq1sueQR3uCI81zo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"client-name\":\"Reliance\",\n    \"pick-up-Date\":\"2024/02/15\",\n    \"pick-up-time\":\"1PM\",\n    \"expected-delivery-time\":24,\n    \"checklist-id\":2529\n  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/order/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"order",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/order/viewOrders",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVlY2Q4MjA1NzQzYjZiNWE4YTU1OCIsIm5hbWUiOiJpc2hhIEFnYXJ3YWwiLCJnZW5kZXIiOiJGZW1hbGUiLCJlbWFpbCI6ImlzaGEuYWdhcndhbEBnbWFpbC5jb20iLCJtb2JpbGVObyI6IjEyMzQ1Njc4OSIsInVzZXJUeXBlIjoiUHJvY3VyZW1lbnRNYW5hZ2VyIiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4MzI5MDAsImV4cCI6MTcwNzg0MzcwMH0.oSqjsqYuFDQAdhor-0J8xOZxCvQtJQVo8ZwVSC6OgpA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/order/viewOrders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"order",
+								"viewOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/order/updatestatus",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY1YzVlY2Q4MjA1NzQzYjZiNWE4YTU1OCIsIm5hbWUiOiJpc2hhIEFnYXJ3YWwiLCJnZW5kZXIiOiJGZW1hbGUiLCJlbWFpbCI6ImlzaGEuYWdhcndhbEBnbWFpbC5jb20iLCJtb2JpbGVObyI6IjEyMzQ1Njc4OSIsInVzZXJUeXBlIjoiUHJvY3VyZW1lbnRNYW5hZ2VyIiwicmVnaXN0ZXJlZEJ5IjoiT21rYXIgQm9yYWRlIiwicmVnaXN0ZXJlZFBlcnNvblJvbGUiOiJBZG1pbiJ9LCJpYXQiOjE3MDc4ODUzNjMsImV4cCI6MTcwNzg5NjE2M30.gKr0k9ZNmsSu7w6kK1jvgvEalL1P5J744_CeKqC_pUU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order-id\":5623,\n    \"Remark\":\"The Instructions are beign followed.\",\n    \"status\":\"completed\"//\"in Transit.\"//\"completed.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/order/updatestatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"order",
+								"updatestatus"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "all apis related to orders."
+		}
+	]
+}
