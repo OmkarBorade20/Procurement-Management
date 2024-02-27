@@ -4,11 +4,15 @@ const clientController=require('../controllers/client')
 const auth=require('../helperModules/authentication')
 const errHandler=require('../utils/errorHandler')
 const responseHandler=require('../utils/responseHandler')
-const validate=require('../validation/index')
+const {validation}=require('../validation/index')
+
+const {clientmanage_schema}=require('../validation/schemas.js')
+
 
 clientRouter.get('/fetchDetails',auth.tokenValidate,auth.allowedRoutes,clientController.fetchDetails)
-clientRouter.patch('/manageDetails',validate.clientManage,auth.tokenValidate,auth.allowedRoutes,clientController.manageDetails)
+clientRouter.patch('/manageDetails',validation(clientmanage_schema),auth.tokenValidate,auth.allowedRoutes,clientController.manageDetails)
 clientRouter.post('/clientUploadChecklist',auth.tokenValidate,auth.allowedRoutes,clientController.clientUploadChecklist)
+
 
 
 clientRouter.use(errHandler)

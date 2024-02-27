@@ -5,11 +5,12 @@ const auth=require('../helperModules/authentication.js')
 const errHandler=require('../utils/errorHandler')
 const responseHandler=require('../utils/responseHandler')
 
-const validate=require('../validation/index.js')
+const {validation}=require('../validation/index.js')
+const {authority_schema}=require('../validation/schemas.js')
 
 //only Admin can Access this
 router.get('/allUsers',auth.tokenValidate,auth.allowedRoutes,adminController.allUsers);
-router.patch('/setAuthority',validate.authority,auth.tokenValidate,auth.allowedRoutes,adminController.setAuthority)
+router.patch('/setAuthority',validation(authority_schema),auth.tokenValidate,auth.allowedRoutes,adminController.setAuthority)
 router.get('/fetchMapping',auth.tokenValidate,auth.allowedRoutes,adminController.fetchMapping)
 router.get('/fetchMapping/:email',auth.tokenValidate,auth.allowedRoutes,adminController.fetchMapping)
 router.get('/fetchProcumentManagers',auth.tokenValidate,auth.allowedRoutes,adminController.fetchProcumentManagers)

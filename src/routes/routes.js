@@ -10,7 +10,8 @@ const orderrouter=require('./order-routes.js')
 const checklistrouter=require('./checklist-routes.js')
 const adminrouter=require('./admin-routes.js')
 
-const validation=require('../validation/index.js')
+const {validation}=require('../validation/index.js')
+const {login_schema,signup_schema}=require('../validation/schemas.js')
 
 
 //all client Routes
@@ -26,9 +27,9 @@ router.use('/order',orderrouter);
 router.use('/checklist',checklistrouter)
 
 //authentication Routes
-router.post('/login',validation.login,controller.login);
+router.post('/login',validation(login_schema),controller.login);
 router.get('/refreshToken',controller.refreshToken)
-router.post('/signup',validation.signup,auth.tokenValidate,auth.allowedRoutes,controller.signup);
+router.post('/signup',validation(signup_schema),auth.tokenValidate,auth.allowedRoutes,controller.signup);
 
 
 
